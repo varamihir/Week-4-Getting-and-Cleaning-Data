@@ -40,7 +40,7 @@ These signals were used to estimate variables of the feature vector for each pat
 * WALKING
 * WALKING_UPSTAIRS
 * WALKING_DOWNSTAIRS
-* SITIING
+* SITTING
 * STANDING
 * LAYING
 
@@ -51,5 +51,5 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 # Package used in run_analysis.R
-data.table
-reshape2
+* data.table
+* reshape2
