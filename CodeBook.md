@@ -43,7 +43,7 @@ Codebook explaining the different variables used and any transformations applied
   std() : Standard Deviation
 
 # These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-#  units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
+#  Units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
 
 * 1 tBodyAcc-mean()-X
 * 2 tBodyAcc-mean()-Y
