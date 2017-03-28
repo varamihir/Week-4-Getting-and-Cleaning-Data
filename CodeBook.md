@@ -38,6 +38,9 @@ Codebook explaining the different variables used and any transformations applied
 * SITTING
 * STANDING
 * LAYING
+# The set of variables that were estimated from these signals are: 
+  mean(): Mean Value,
+  std() : Standard Deviation
 
 ## These signals were used to estimate variables of the feature vector for each pattern:  
 ## '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -128,7 +131,6 @@ Codebook explaining the different variables used and any transformations applied
 * 84 angle(X,gravityMean)
 * 85 angle(Y,gravityMean)
 * 86 angle(Z,gravityMean)
-
 
 
 
