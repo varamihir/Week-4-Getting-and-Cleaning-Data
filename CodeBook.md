@@ -42,8 +42,7 @@ Codebook explaining the different variables used and any transformations applied
   mean(): Mean Value,
   std() : Standard Deviation
 
-## These signals were used to estimate variables of the feature vector for each pattern:  
-## '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+# These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 * 1 tBodyAcc-mean()-X
 * 2 tBodyAcc-mean()-Y
