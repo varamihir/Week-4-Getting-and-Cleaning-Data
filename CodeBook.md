@@ -27,7 +27,27 @@ Codebook explaining the different variables used and any transformations applied
 * 24
 * 25
 * 26
-                   27
-                  28
-                   29
-                   30
+* 27
+* 28
+* 29
+* 30
+# The six activites that each person performed
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+
+
+
+
+
+
+
+
+
+
+
+
+
