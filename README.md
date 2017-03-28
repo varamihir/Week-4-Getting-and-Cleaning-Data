@@ -52,8 +52,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 # Code for the tidy data
 tidydata <-write.table(x = mergeData, file = "tidyaData.txt", quote = FALSE, row.name = FALSE)
+
 tidydata <- fread("C:/Users/nvarshney/Desktop/R programming/Coursera/tidyaData.txt")
+
 View(tidydata)
+
 dim(tidydata)
 
 # Package used in run_analysis.R
