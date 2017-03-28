@@ -3,9 +3,9 @@ Codebook explaining the different variables used and any transformations applied
 # subjectNum - The group of 30 volunteers who carried out the experiment
                  * 1  
                  * 2
-                  3 
-                  4
-                  5 5
+                 * 3 
+                 * 4
+                 * 5
                   6    subject 6
                   7    subject 7
                   8    subject 8
