@@ -10,13 +10,15 @@ Codebook explaining the different variables used and any transformations applied
 * Subject_test.txt : subjects numbers for test observation
 * activity_lables.txt : file containing activity text labels
 * feature.txt : file containing features name
-# Variables
+# Transformation
 * activityLabels : load the file using fread command and used argument col.names( "classLabels" and "activityName" )
 * FeatureLabels : load the file using fread command and used argument col.names( "index", "featureNames")
 * FeatureWanted and measurements : uses the "grep" function to capture all column numbers and column names that contains "mean" or "std" in its description. Once the original feature names are available it uses "gsub" function to replace all special chracters from the text; in this case expecially "()" and "-"
 * train data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
 * test data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
-* mergeData : merge train and test data using rbind command, set the Activity and SubjectNum as fac
+* mergeData : merge train and test data using rbind command, set the Activity and SubjectNum as factor.
+# independent tidy data set created with the average of each variable for each activity and each subject used reshape2 package. Fist used melt function to mergeData to reshape into tall and skinny data, id = c("subjectNum", "Activity"),set measure.vars = varaible, and  dcast function to mergeData from the first step used argument fun.aggregate = mean. Tidy data set as a txt file created with write.table() using row.name=FALSE 
+
 # Variables Name 
 # subjectNum - The group of 30 volunteers who carried out the experiment
 * 1  
@@ -49,20 +51,17 @@ Codebook explaining the different variables used and any transformations applied
 * 28
 * 29
 * 30
-# The six activites that each person performed
+# Activities : The six activites that each person performed
 * WALKING
 * WALKING_UPSTAIRS
 * WALKING_DOWNSTAIRS
 * SITTING
 * STANDING
 * LAYING
+# These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. Units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
 # The set of variables that were estimated from these signals are: 
   mean(): Mean Value,
   std() : Standard Deviation
-
-# These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-#  Units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
-
 * 1 tBodyAcc-mean()-X
 * 2 tBodyAcc-mean()-Y
 * 3 tBodyAcc-mean()-Z
@@ -150,7 +149,11 @@ Codebook explaining the different variables used and any transformations applied
 * 85 angle(Y,gravityMean)
 * 86 angle(Z,gravityMean)
 
-# second tidy data 
+
+
+
+
+
 
 
 
