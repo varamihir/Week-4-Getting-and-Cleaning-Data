@@ -61,7 +61,7 @@ The six activites that each person performed
 * STANDING
 * LAYING
 # These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. Units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
-# The set of variables that were estimated from these signals are: 
+  The set of variables that were estimated from these signals are: 
   mean(): Mean Value,
   std() : Standard Deviation
 * 1 tBodyAcc-mean()-X
