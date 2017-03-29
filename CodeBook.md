@@ -16,11 +16,7 @@ Codebook explaining the different variables used and any transformations applied
 * FeatureWanted and measurements : uses the "grep" function to capture all column numbers and column names that contains "mean" or "std" in its description. Once the original feature names are available it uses "gsub" function to replace all special chracters from the text; in this case expecially "()" and "-"
 * train data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
 * test data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
-* mergeData : merge train and test data using rbind command, set the Activity and SubjectNum as factor.
-# Created a second tidy 
-
-
-
+* mergeData : merge train and test data using rbind command, set the Activity and SubjectNum as fac
 # Variables Name 
 # subjectNum - The group of 30 volunteers who carried out the experiment
 * 1  
@@ -154,6 +150,7 @@ Codebook explaining the different variables used and any transformations applied
 * 85 angle(Y,gravityMean)
 * 86 angle(Z,gravityMean)
 
+# second tidy data 
 
 
 
