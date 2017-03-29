@@ -1,4 +1,26 @@
 Codebook explaining the different variables used and any transformations applied in scripts for data cleaning project.
+ Download the data sets into local directory and unzip the files.
+ # Train Folder
+* X_train.txt : training data
+* Y_train.txt : training lable data
+* Subject_train.txt : subjects numbers for training observation
+# Test Folder
+* X_test.txt : test data
+* Y_test.txt : test label data
+* Subject_test.txt : subjects numbers for test observation
+* activity_lables.txt : file containing activity text labels
+* feature.txt : file containing features name
+# Variables
+* activityLabels : load the file using fread command and used argument col.names( "classLabels" and "activityName" )
+* FeatureLabels : load the file using fread command and used argument col.names( "index", "featureNames")
+* FeatureWanted and measurements : uses the "grep" function to capture all column numbers and column names that contains "mean" or "std" in its description. Once the original feature names are available it uses "gsub" function to replace all special chracters from the text; in this case expecially "()" and "-"
+* train data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
+* test data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
+* mergeData : merge train and test data using rbind command, set the Activity and SubjectNum as factor.
+# Created a second tidy 
+
+
+
 # Variables Name 
 # subjectNum - The group of 30 volunteers who carried out the experiment
 * 1  
