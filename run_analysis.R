@@ -13,10 +13,10 @@ activityLabels <- fread("C:/Users/nvarshney/Desktop/R programming/Coursera/UCI H
                         col.names = c("classLabels", "activityName"))
 View(activityLabels)
 
-featureLables <- fread("C:/Users/nvarshney/Desktop/R programming/Coursera/UCI HAR Dataset/features.txt", 
+featureLabels <- fread("C:/Users/nvarshney/Desktop/R programming/Coursera/UCI HAR Dataset/features.txt", 
                        col.names = c("index","featureNames"))
-View(featureLables)
-featureWanted <- grep("mean|std", featureLables[, featureNames], ignore.case = TRUE)
+View(featureLabels)
+featureWanted <- grep("mean|std", featureLabels[, featureNames], ignore.case = TRUE)
 View(featureWanted)
 measurements <- featureLables[featureWanted, featureNames]
 measurements <- gsub('[()]', '', measurements)
