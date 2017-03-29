@@ -20,7 +20,8 @@ Codebook explaining the different variables used and any transformations applied
 * Independent tidy data set created with the average of each variable for each activity and each subject used reshape2 package. Fist used melt function to mergeData to reshape into tall and skinny data, id = c("subjectNum", "Activity"),set measure.vars = varaible, and  dcast function to mergeData from the first step used argument fun.aggregate = mean. Tidy data set as a txt file created with write.table() using row.name=FALSE 
 
 # Variables Name 
-# subjectNum - The group of 30 volunteers who carried out the experiment
+# subjectNum 
+The group of 30 volunteers who carried out the experiment
 * 1  
 * 2
 * 3 
@@ -51,7 +52,8 @@ Codebook explaining the different variables used and any transformations applied
 * 28
 * 29
 * 30
-# Activities : The six activites that each person performed
+# Activities :
+The six activites that each person performed
 * WALKING
 * WALKING_UPSTAIRS
 * WALKING_DOWNSTAIRS
