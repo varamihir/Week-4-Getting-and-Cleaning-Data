@@ -17,7 +17,7 @@ Codebook explaining the different variables used and any transformations applied
 * train data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
 * test data set : set contains those columns only with featureWanted mean and standard deviation observations with activity and subject
 * mergeData : merge train and test data using rbind command, set the Activity and SubjectNum as factor.
-* Independent tidy data set created with the average of each variable for each activity and each subject used reshape2 package. Fist used melt function to mergeData to reshape into tall and skinny data, id = c("subjectNum", "Activity"),set measure.vars = varaible, and  dcast function to mergeData from the first step used argument fun.aggregate = mean. Tidy data set as a txt file created with write.table() using row.name=FALSE 
+* Independent tidy data set created with the average of each variable for each activity and each subject. Used reshape2 package. Fist used melt function to mergeData to reshape into tall and skinny data, set id = c("subjectNum", "Activity"),set measure.vars = varaible, and  dcast function to mergeData from the first step used argument fun.aggregate = mean. Tidy data set as a txt file created with write.table() using row.name=FALSE 
 
 # Variables Name 
 # subjectNum 
