@@ -1,5 +1,5 @@
 # Week-4-Getting-and-Cleaning-Data
-# Desription of the DATA
+# Description of the DATA
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -10,7 +10,7 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 # Description of abbreviation of measurements
-* leading t or f is based on time or frequency measurements. *Body = related to body movement. *Gravity = acceleration of gravity *Acc = accelerometer measurement *Gyro = gyroscopic measurements *Jerk = sudden movement acceleration *Mag = magnitude of movement *mean and SD are calculated for each subject for each activity for each mean and SD measurements.
+* leading t or f is based on time or frequency measurements. * Body = related to body movement. * Gravity = acceleration of gravity *Acc = accelerometer measurement * Gyro = gyroscopic measurements * Jerk = sudden movement acceleration * Mag = magnitude of movement *mean and SD are calculated for each subject for each activity for each mean and SD measurements.
 
 The units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
 
