@@ -1,5 +1,11 @@
+# 1 Merges the training and the test sets to create one data set.
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+# 3. Uses descriptive activity names to name the activities in the data set
+# 4. Appropriately labels the data set with descriptive variable names.
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subjects
+
 # Load Packages and get the Data in R
-library("reshape2")
+library(reshape2)
 library(data.table)
 setwd("C:/Users/nvarshney/Desktop/R programming/Coursera")
 getwd()
@@ -18,7 +24,7 @@ featureLabels <- fread("C:/Users/nvarshney/Desktop/R programming/Coursera/UCI HA
 View(featureLabels)
 featureWanted <- grep("mean|std", featureLabels[, featureNames], ignore.case = TRUE)
 View(featureWanted)
-measurements <- featureLables[featureWanted, featureNames]
+measurements <- featureLabels[featureWanted, featureNames]
 measurements <- gsub('[()]', '', measurements)
 str(measurements)
 
@@ -57,7 +63,7 @@ test <- cbind(test, testActivities,testSubjects)
 View(test)
 dim(test)
 
-# merge  Train and Test data sets
+# Merge Train and Test data sets
 mergeData <- rbind(train,test)
 View(mergeData)
 dim(mergeData)
